@@ -23,7 +23,7 @@ body {
 /* ========== HEADER ========== */
 .site-header {
   background: var(--primary-color);
-  padding: 10px 0;
+  padding: 15px 20px;
   position: sticky;
   top: 0;
   width: 100%;
@@ -47,7 +47,7 @@ body {
 .site-nav ul {
   list-style: none;
   display: flex;
-  gap: 20px;
+  gap: 30px;
 }
 
 .site-nav ul li a {
@@ -81,18 +81,19 @@ body {
 }
 
 .hero p {
-  font-size: 20px;
-  margin-bottom: 25px;
+  font-size: 22px;
+  margin-bottom: 30px;
 }
 
 .btn-primary, .btn-secondary {
   display: inline-block;
-  padding: 10px 20px;
-  margin: 5px;
+  padding: 12px 25px;
+  margin: 8px;
   font-weight: bold;
-  border-radius: 5px;
+  border-radius: 6px;
   text-decoration: none;
   transition: background 0.3s;
+  font-size: 16px;
 }
 
 .btn-primary {
@@ -184,22 +185,39 @@ h2 {
   font-size: 14px;
 }
 
-/* ========== RESPONSIVE ========== */
+/* ========== RESPONSIVE (MOBILE) ========== */
 @media (max-width: 768px) {
   .site-header .container {
     flex-direction: column;
+    padding: 10px 20px;
   }
+
   .site-nav ul {
-    flex-direction: column;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
     gap: 10px;
     margin-top: 10px;
   }
+
+  .site-nav ul li a {
+    font-size: 14px;
+  }
+
+  .btn-primary, .btn-secondary {
+    margin: 5px;
+    padding: 8px 16px;
+    font-size: 14px;
+  }
+
   .hero h1 {
     font-size: 36px;
   }
+
   .hero p {
     font-size: 18px;
   }
+
   .metrics {
     flex-direction: column;
     align-items: center;
