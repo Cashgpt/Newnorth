@@ -1,64 +1,95 @@
-
 body {
-  font-family: 'Montserrat', sans-serif;
   margin: 0;
-  padding: 0;
-  line-height: 1.6;
-  background: #f4f4f4;
+  font-family: 'Arial', sans-serif;
+  background: #f9f9f9;
   color: #333;
 }
 
-.container {
-  width: 90%;
-  max-width: 1200px;
-  margin: auto;
+nav {
+  background: #2c5f2d;
+  position: sticky;
+  top: 0;
+  z-index: 1000;
 }
 
-.hero {
-  background-image: url('../images/hero-forest.jpg');
-  background-size: cover;
-  background-position: center;
-  padding: 6rem 1rem;
-  text-align: center;
+.nav-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 20px;
+}
+
+.nav-links a {
+  margin: 0 10px;
   color: white;
-}
-
-.overlay {
-  background: rgba(0, 0, 0, 0.5);
-  padding: 2rem;
-  border-radius: 8px;
-}
-
-h1 {
-  font-size: 3rem;
-  margin-bottom: 1rem;
-}
-
-p {
-  font-size: 1.2rem;
-  margin-bottom: 2rem;
-}
-
-.btn {
-  padding: 0.75rem 1.5rem;
-  font-weight: 600;
-  border-radius: 4px;
   text-decoration: none;
+  font-weight: bold;
+}
+
+.nav-links a:hover {
+  color: #d4e09b;
+}
+
+#hero {
+  background: url('../assets/forest-preview.jpg') center center/cover no-repeat;
+  height: 90vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: white;
+  text-align: center;
+  position: relative;
+}
+
+.hero-text {
+  background: rgba(44, 95, 45, 0.6);
+  padding: 20px;
+  border-radius: 10px;
+}
+
+.btn-primary {
+  background: #588157;
+  padding: 10px 20px;
+  color: white;
+  text-decoration: none;
+  border-radius: 5px;
+  margin-top: 15px;
   display: inline-block;
-  margin-right: 1rem;
 }
 
-.btn-accent {
-  background-color: #3e7c3c;
+.btn-primary:hover {
+  background: #3a5a40;
+}
+
+main section {
+  padding: 40px 20px;
+  text-align: center;
+}
+
+section h2 {
+  color: #2c5f2d;
+}
+
+footer {
+  background: #3a5a40;
   color: white;
+  text-align: center;
+  padding: 20px;
+  font-size: 0.9rem;
 }
 
-.btn-outline {
-  border: 2px solid white;
-  color: white;
-  background: transparent;
+ul {
+  list-style-type: none;
+  padding: 0;
 }
 
-.btn:hover {
-  opacity: 0.9;
+ul li {
+  margin-bottom: 10px;
+}
+ul li a {
+  color: #588157;
+  text-decoration: none;
+}
+ul li a:hover {
+  text-decoration: underline;
 }
