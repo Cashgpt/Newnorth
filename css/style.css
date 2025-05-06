@@ -1,34 +1,53 @@
-:root {
-  --primary: #2C5F2D;
-  --accent: #D4A017;
-  --neutral: #A9A28F;
-  --blue: #6CAED9;
-  --text: #333;
-}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Sylvan North Forestry | Leading Sustainable Reforestation</title>
+  <meta name="description" content="Leading scalable, zero-waste reforestation solutions that regenerate Canada's forests and accelerate climate action.">
 
-body {
-  font-family: 'Open Sans', sans-serif;
-  color: var(--text);
-  background-color: #f9f9f6;
-}
+  <!-- SEO + Social -->
+  <meta property="og:title" content="Sylvan North Forestry">
+  <meta property="og:description" content="Pioneering scalable, zero-waste reforestation.">
+  <meta property="og:image" content="https://sylvannorth.com/assets/forest-preview.jpg">
+  <meta property="og:url" content="https://sylvannorth.com">
+  <meta name="twitter:card" content="summary_large_image">
 
-.btn-primary {
-  background-color: var(--primary);
-  color: white;
-  padding: 0.75rem 1.25rem;
-  border-radius: 0.5rem;
-  text-decoration: none;
-}
+  <!-- Fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600&family=Open+Sans:wght@400;700&display=swap" rel="stylesheet">
 
-.btn-secondary {
-  background-color: var(--accent);
-  color: white;
-  padding: 0.75rem 1.25rem;
-  border-radius: 0.5rem;
-  text-decoration: none;
-}
+  <!-- Stylesheet -->
+  <link rel="stylesheet" href="css/style.css" />
+</head>
 
-h1, h2, h3 {
-  font-family: 'Playfair Display', serif;
-  color: var(--primary);
-}
+<body>
+
+  <header class="site-header">
+    <div class="logo">Sylvan North</div>
+    <nav class="site-nav">
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="#solutions">Solutions</a></li>
+        <li><a href="blog.html">Insights</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <section class="hero">
+    <div class="container">
+      <h1>Leading the Next Era of Sustainable Reforestation</h1>
+      <p>Zero-Waste. Maximum Survival. Scalable Impact.</p>
+      <p>At Sylvan North, we engineer solutions that regenerate Canada's forests and accelerate climate commitments — without plastic waste. Our proprietary BioPod system empowers governments, corporations, and NGOs to plant smarter, faster, and cleaner.</p>
+      <div class="hero-buttons">
+        <a href="#solutions" class="btn-primary">Explore Our Technology</a>
+        <a href="#donate" class="btn-secondary">Invest in Forest Innovation</a>
+        <a href="/free-tree/" class="btn-primary" style="background-color:#6CAED9;">Claim Your Free Tree</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- Add your other sections below: solutions, blog, donate, contact, footer -->
+
+</body>
+</html>
