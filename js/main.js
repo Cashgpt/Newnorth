@@ -1,23 +1,21 @@
-// ========== Sylvan North Forestry Website Main Script ==========
-
-// Confirm website loaded
-console.log('Sylvan North Forestry Website Loaded Successfully');
-
-// ========== Smooth Scroll for Anchor Links ==========
-document.querySelectorAll('a[href^="#"]').forEach(anchor => {
-  anchor.addEventListener('click', function (e) {
-    e.preventDefault();
-
-    const targetID = this.getAttribute('href').substring(1);
-    const targetElement = document.getElementById(targetID);
-
-    if (targetElement) {
-      targetElement.scrollIntoView({
-        behavior: 'smooth'
-      });
-    }
-  });
+// Mobile nav toggle
+document.querySelector('.nav-toggle').addEventListener('click', () => {
+  document.querySelector('.site-nav').classList.toggle('nav-open');
 });
 
-// ========== Future Interactive Scripts (Placeholder) ==========
-// Example: Add mobile menu toggle script here if needed
+// Animated counters
+const counters = document.querySelectorAll('.counter');
+counters.forEach(counter => {
+  const update = () => {
+    const target = +counter.getAttribute('data-target');
+    const current = +counter.innerText;
+    const increment = target / 200;
+    if (current < target) {
+      counter.innerText = Math.ceil(current + increment);
+      setTimeout(update, 10);
+    } else {
+      counter.innerText = target;
+    }
+  };
+  update();
+});
