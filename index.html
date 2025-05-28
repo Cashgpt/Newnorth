@@ -1,53 +1,114 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Sylvan North Forestry | Leading Sustainable Reforestation</title>
-  <meta name="description" content="Leading scalable, zero-waste reforestation solutions that regenerate Canada's forests and accelerate climate action.">
-
-  <!-- SEO + Social -->
-  <meta property="og:title" content="Sylvan North Forestry">
-  <meta property="og:description" content="Pioneering scalable, zero-waste reforestation.">
-  <meta property="og:image" content="https://sylvannorth.com/assets/forest-preview.jpg">
-  <meta property="og:url" content="https://sylvannorth.com">
-  <meta name="twitter:card" content="summary_large_image">
-
-  <!-- Fonts -->
-  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600&family=Open+Sans:wght@400;700&display=swap" rel="stylesheet">
-
-  <!-- Stylesheet -->
-  <link rel="stylesheet" href="css/style.css" />
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>BioPod | Accelerating Reforestation</title>
+  <meta name="description" content="BioPod smart myco-composite tree-planting pods: +30% survival, 100% biodegradable.">
+  <link rel="stylesheet" href="assets/css/style.css">
 </head>
-
 <body>
-
+  <!-- Header & Navigation -->
   <header class="site-header">
-    <div class="logo">Sylvan North</div>
-    <nav class="site-nav">
-      <ul>
-        <li><a href="index.html">Home</a></li>
-        <li><a href="#solutions">Solutions</a></li>
-        <li><a href="blog.html">Insights</a></li>
-        <li><a href="#contact">Contact</a></li>
-      </ul>
-    </nav>
+    <div class="container">
+      <a href="#" class="logo">BioPod</a>
+      <button class="nav-toggle" aria-label="Toggle navigation">&#9776;</button>
+      <nav class="site-nav">
+        <ul>
+          <li><a href="#technology">Technology</a></li>
+          <li><a href="#performance">Performance</a></li>
+          <li><a href="#applications">Applications</a></li>
+          <li><a href="#about">About Us</a></li>
+          <li><a href="#resources">Resources</a></li>
+          <li><a href="#contact" class="cta">Request a Pilot</a></li>
+        </ul>
+      </nav>
+    </div>
   </header>
 
+  <!-- Hero Section -->
   <section class="hero">
     <div class="container">
-      <h1>Leading the Next Era of Sustainable Reforestation</h1>
-      <p>Zero-Waste. Maximum Survival. Scalable Impact.</p>
-      <p>At Sylvan North, we engineer solutions that regenerate Canada's forests and accelerate climate commitments — without plastic waste. Our proprietary BioPod system empowers governments, corporations, and NGOs to plant smarter, faster, and cleaner.</p>
-      <div class="hero-buttons">
-        <a href="#solutions" class="btn-primary">Explore Our Technology</a>
-        <a href="#donate" class="btn-secondary">Invest in Forest Innovation</a>
-        <a href="/free-tree/" class="btn-primary" style="background-color:#6CAED9;">Claim Your Free Tree</a>
-      </div>
+      <h1>Accelerating Reforestation with Smart Myco-Composites</h1>
+      <p><strong>+30% seedling survival</strong> &bull; <strong>100% biodegradable</strong></p>
+      <a href="#contact" class="btn">Request a Pilot</a>
     </div>
   </section>
 
-  <!-- Add your other sections below: solutions, blog, donate, contact, footer -->
+  <!-- Section: Technology -->
+  <section id="technology" class="section">
+    <div class="container">
+      <h2>Technology</h2>
+      <p>Our patented myco-composite pods harness oyster mushroom mycelium to bind substrate and deliver water on demand, reducing labour by 25%.</p>
+      <!-- Add icons & bullet points here -->
+    </div>
+  </section>
 
+  <!-- Section: Performance -->
+  <section id="performance" class="section">
+    <div class="container">
+      <h2>Performance</h2>
+      <div class="counters">
+        <div><span class="counter" data-target="30">0</span>% Survival Increase</div>
+        <div><span class="counter" data-target="25">0</span>% Labor Reduction</div>
+      </div>
+      <!-- Link to case study PDFs -->
+    </div>
+  </section>
+
+  <!-- Section: Applications -->
+  <section id="applications" class="section">
+    <div class="container">
+      <h2>Applications</h2>
+      <ul class="applications-list">
+        <li><strong>Government Programs:</strong> 2 Billion Trees, provincial grants</li>
+        <li><strong>Conservation Authorities:</strong> Watershed reforestation pilots</li>
+        <li><strong>Private Sector:</strong> Forestry contractors & NGOs</li>
+      </ul>
+    </div>
+  </section>
+
+  <!-- Section: About Us -->
+  <section id="about" class="section">
+    <div class="container">
+      <h2>About Us</h2>
+      <p>Meet our interdisciplinary team of mycologists, foresters, and engineers committed to innovative, sustainable reforestation.</p>
+      <!-- Add team bios -->
+    </div>
+  </section>
+
+  <!-- Section: Resources -->
+  <section id="resources" class="section">
+    <div class="container">
+      <h2>News & Resources</h2>
+      <ul>
+        <li><a href="#">White Paper: Mycelial Soil-Binding</a></li>
+        <li><a href="#">Case Study: 1 000 ha Pilot (Q3 2025)</a></li>
+        <li><a href="#">Blog: Reforestation Policy Updates</a></li>
+      </ul>
+    </div>
+  </section>
+
+  <!-- Section: Contact -->
+  <section id="contact" class="section contact">
+    <div class="container">
+      <h2>Get a Pilot</h2>
+      <form action="https://formspree.io/f/your-form-id" method="POST">
+        <label>Name<input type="text" name="name" required></label>
+        <label>Email<input type="email" name="email" required></label>
+        <label>Organization<input type="text" name="organization"></label>
+        <button type="submit" class="btn">Submit</button>
+      </form>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="site-footer">
+    <div class="container">
+      <p>© 2025 BioPod Inc. | <a href="#privacy">Privacy Policy</a></p>
+    </div>
+  </footer>
+
+  <script src="assets/js/main.js"></script>
 </body>
 </html>
